@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    background: white;
+}
+
+
+.link-style {
+    text-decoration: none;
+    background: linear-gradient(90deg, blue, black);
+    background-size: 200% 200%;   /* double width for animation */
+    background-position: -100% 0; /* start off-screen */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    transition: background-position 0.3s ease;
+}
+
+.link-style:hover {
+    background-position: 0 0;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    color: black;
+}
+
+.hero span {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    gap: 0px;      /* spacing between the <p> tags */
+}
+
+.container p {
+    flex: 1;        /* makes each <p> grow equally */
+    padding: 10px;
+}
+
+.all {
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background: black;
+    margin: 10px 0;
+}
+
+
+p {
+    display: block;
+    padding: 10px 10px;
+    font-size: 25px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: black;
+    margin-top: 40px;
+}
